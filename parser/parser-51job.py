@@ -6,12 +6,12 @@ Created on Oct 21, 2017
 
 import scrapy
 
-class MySpider(scrapy.Spider):
+class MySpider51Job(scrapy.Spider):
     '''
     classdocs
     '''
     name = 'mySpider'
-    start_urls = ['https://blog.scrapinghub.com']
+    start_urls = ['http://www.baidu.com']
     
     def parse(self, response):
         for title in response.css('h2.entry-title'):
